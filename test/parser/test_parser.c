@@ -1,21 +1,15 @@
 #include "parser.h"
 #include "unity.h"
 
-void setUp(void)
+void test_get_colon()
 {
+  char chordname[] = "cis:7";
+  TEST_ASSERT_NOT_NULL(get_colon(chordname));
 }
 
-void tearDown(void)
-{
-}
-
-void test_myfunc(void)
-{
-  TEST_ASSERT_EQUAL(0, myfunc());
-}
 
 void main(void)
 {
-  RUN_TEST(test_myfunc, 1);
+  RUN_TEST(test_get_colon, 1);
 
 }
