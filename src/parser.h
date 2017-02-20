@@ -13,5 +13,7 @@ struct chord
 };
 
 char *get_colon(char *chordname);
+char *get_slash(char *chordname);
+uint8_t get_root_size(char *chordname);
 
 #endif
